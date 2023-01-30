@@ -1,0 +1,292 @@
+/* Universal Styles */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: calc(100vh - 200px);
+}
+
+/* Navigation Bar */
+
+nav {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    background-color: rgb(44, 43, 43);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    border-bottom: 1px solid silver;
+}
+
+nav .nav-bar {
+    display: flex;
+    position: relative;
+}
+
+ nav .nav-bar img {
+    max-height: 4rem;
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+ }
+
+#nav-list {
+    list-style: none;
+    position: absolute;
+    display: inline-flex;
+    font-size: 1.5rem;
+    right: 2rem;
+}
+
+#nav-list li a {
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+#nav-list li:hover {
+    transform: scale(1.1);
+}
+
+#nav-list li a:hover {
+    color: rgb(39, 184,184);
+}
+
+@media only screen and (max-width: 1100px) {
+    nav .nav-bar img {
+        display: none;
+    }
+}
+
+/* Header */
+
+header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header .header-img img {
+    position: relative;
+    left: 0;
+    height: 800px;
+}
+
+header .header-txt {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    right: 10%;
+}
+
+header .header-txt h1 {
+    font-size: calc(4rem + 2vw);
+    color: white;
+    margin: 0;
+}
+
+header .header-txt h2 {
+    font-size: calc(2rem + 1vw);
+    color: silver;
+    font-style: italic;
+    margin: 1rem;
+}
+
+/* Bikes Section */
+
+main {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.sub-header {
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 30rem;
+}
+
+.sub-header h3 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    font-size: calc(1.5rem + 2vw);
+    color: rgb(39, 184,184);
+}
+
+.sub-header p {
+    color: white;
+    font-size: calc(1.5rem + 1vw);
+    max-width: 80%;
+}
+
+.bike-list {
+    margin: 3rem;
+    max-width: 90%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bike-list .bike-link {
+    position: relative;
+    display: flex;
+    margin: 3rem;
+    transition: all .2s ease-in-out;
+}
+
+.bike-list .bike-link img {
+    max-width: 37.5rem;
+    border: 0.25rem solid black;
+}
+
+.bike-list .bike-link .bike-caption {
+    text-align: center;
+    font-size: 4rem;
+    position: absolute;
+    background-color: silver;
+    opacity: 0.7;
+    bottom: 2rem;
+    left: 9%;
+    right: 9%;
+    padding: 0.25rem 0.5rem;
+    color: black;
+    border-radius: 0.75rem;
+}
+
+.bike-list .bike-link .bike-caption a {
+    text-decoration: none;
+}
+
+.bike-list .bike-link:hover {
+    transform: scale(1.05);
+}
+
+/* Meet Our Team Section */
+
+.team {
+    margin-top: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: inline-flex;
+    background-color: rgb(44, 43, 43);
+}
+
+.team h2 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+#team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#team-members .person {
+    position: relative;
+    margin: 2rem;
+}
+
+#team-members .person img {
+    max-width: 37.5rem;
+    border: 0.25rem solid black;
+}
+
+#team-members .person .name {
+    text-align: center;
+    font-size: 4rem;
+    position: absolute;
+    background-color: silver;
+    opacity: 0.8;
+    bottom: 2rem;
+    left: 9%;
+    right: 9%;
+    padding: 1rem;
+    color: black;
+    border-radius: 0.75rem;
+    line-height: 3rem;
+}
+
+#team-members .person .name .title {
+    font-size: 2rem;
+}
+
+/* Bottom Section */
+
+.bottom-content {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.bottom-content .contact {
+    width: 50rem;
+    height: 20rem;
+    background-color:rgb(44, 43, 43);
+    flex-direction: column;
+    margin: 6rem;
+}
+.bottom-content .contact img {
+    max-width: 40rem;
+    margin: 2rem;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.bottom-content .contact address {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bottom-content .contact address a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+footer .contact address a:hover {
+    text-decoration: underline;
+}
+
+.bottom-content .contact address a:hover {
+    color: rgb(39, 184,184);
+}
+
+
+/* Footer Section */
+
+footer {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    width: 100%;
+}
